@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3U-Ei-GW3">
+                                <rect key="frame" x="175" y="150" width="250" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-uV-BcP" customClass="RippleButton">
+                                        <rect key="frame" x="102" y="150" width="46" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.090711805559999997" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m1N-lt-sR3" customClass="RippleField">
+                                        <rect key="frame" x="30" y="30" width="190" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="o4B-Oq-RUW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6py-kA-CAT" customClass="RippleField">
+                                        <rect key="frame" x="30" y="90" width="190" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="y8D-6s-7ss"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.23136574069999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="M4o-uV-BcP" firstAttribute="centerX" secondItem="l3U-Ei-GW3" secondAttribute="centerX" id="9i6-3I-R7w"/>
+                                    <constraint firstAttribute="trailing" secondItem="m1N-lt-sR3" secondAttribute="trailing" constant="30" id="Eph-zv-g6o"/>
+                                    <constraint firstItem="M4o-uV-BcP" firstAttribute="top" secondItem="6py-kA-CAT" secondAttribute="bottom" constant="30" id="Gd5-ad-IFv"/>
+                                    <constraint firstItem="6py-kA-CAT" firstAttribute="centerX" secondItem="m1N-lt-sR3" secondAttribute="centerX" id="L96-wu-xMv"/>
+                                    <constraint firstItem="m1N-lt-sR3" firstAttribute="leading" secondItem="l3U-Ei-GW3" secondAttribute="leading" constant="30" id="Mir-OM-Nhv"/>
+                                    <constraint firstItem="6py-kA-CAT" firstAttribute="top" secondItem="m1N-lt-sR3" secondAttribute="bottom" constant="30" id="RG5-Bl-JZS"/>
+                                    <constraint firstItem="m1N-lt-sR3" firstAttribute="top" secondItem="l3U-Ei-GW3" secondAttribute="top" constant="30" id="SEg-H2-M7h"/>
+                                    <constraint firstAttribute="width" constant="250" id="TGt-cc-UZl"/>
+                                    <constraint firstAttribute="height" constant="300" id="ggo-J8-sh1"/>
+                                    <constraint firstItem="6py-kA-CAT" firstAttribute="width" secondItem="m1N-lt-sR3" secondAttribute="width" id="sBk-OO-uck"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l3U-Ei-GW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5VL-CV-kiq"/>
+                            <constraint firstItem="l3U-Ei-GW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGV-Ny-ZJl"/>
+                            <constraint firstItem="l3U-Ei-GW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXd-R5-lvb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="327"/>
+        </scene>
+    </scenes>
+</document>
